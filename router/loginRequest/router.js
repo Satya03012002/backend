@@ -2,7 +2,7 @@ import express from "express";
 import {signIn,getdata} from "./func.js"
 
 const SignInRouter = express.Router()
-SignInRouter.post("/",signIn);
-SignInRouter.get("/data",getdata);
+SignInRouter.post("/signin",signIn);
+SignInRouter.get("/",getdata);
 
 export default SignInRouter;
